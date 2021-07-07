@@ -46,7 +46,7 @@ def delete(id):
         return 'There was a problem deleting the task'
 
 @app.route('/update/<int:id>', methods=['GET', 'POST'])
-def updtade(id):
+def update(id):
     task = Todo.query.get_or_404(id)
 
     if request.method == 'POST':
